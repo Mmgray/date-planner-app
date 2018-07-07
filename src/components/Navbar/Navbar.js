@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 
 const Navbar = () => (
-ç
+
     <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
@@ -21,6 +21,6 @@ const Navbar = () => (
       </Navbar>
     </Navbar>
   </Navbar>
-)
+);
 
 export default Navbar;
