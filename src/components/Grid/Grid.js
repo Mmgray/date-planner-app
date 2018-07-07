@@ -1,4 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
+=======
+///import { Link } from "react-router-dom";
+>>>>>>> b1c653325dac5ba8935408953197e16b08ca7302
 
 const Grid = () => (
 

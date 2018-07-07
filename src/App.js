@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
-import date from "./pages/date";
+//import date from "./pages/date";
 import Navbar from "./components/Navbar";
 
 const App = () => (
