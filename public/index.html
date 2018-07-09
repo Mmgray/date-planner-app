@@ -37,14 +37,33 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 50%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 50%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
     <div id="map"></div>
-<div id="right-panel">
-  <h2>Results</h2>
-  <ul id="places"></ul>
-  <button id="more">More results</button>
-</div>
-<!-- Replace the value of the key parameter with your own API key. -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW-bcnyz5B1n78cQDCU43ODkPFR80Z7tA&libraries=places&callback=initMap" async defer></script>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtHmiLP66yNey__fOpd_S_DVSUQr-OFG8&callback=initMap"
+    async defer></script>  
   </body>
 </html>
    
