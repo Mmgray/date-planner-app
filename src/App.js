@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Search from "./components/Search";
+import SearchForm from "./components/SearchForm";
+import SearchResults from "./components/SearchResults";
 import Footer from "./components/Footer";
 import Carousel from "./components/Carousel";
 import Wrapper from "./components/Wrapper";
@@ -15,7 +16,7 @@ const App = () => (
       <Navbar />
       <Wrapper>
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={Date} />
+        <Route exact path="/Date" component={Date} />
       </Wrapper>
       <Footer />
     </div>
