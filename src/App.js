@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import SearchForm from "./components/SearchForm";
@@ -9,19 +9,29 @@ import Wrapper from "./components/Wrapper";
 import Date from "./pages/Date";
 import Home from "./pages/Home";
 
+class App extends Component {
+  render() {
+    return (
 
-const App = () => (
-  <Router>
-    <div>
-      <Navbar />
-      <Wrapper>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/Date" component={Date} />
-      </Wrapper>
-      <Footer />
-    </div>
-  </Router>
-);
+      <div>
+        <h1>Let Us Help You Plan Your Next Date!</h1>
+
+     <ul className="header">
+            <li><a href="/">Home</a></li>
+            <li><a href="/date">Date</a></li>
+            <li><a href="/Sign Up">Sign Up</a></li>
+          </ul>
+
+         <div className ="content">
+         
+         </div>
+      </div>
+    );
+  }
+}
+
 
 export default App;
+
+
 
