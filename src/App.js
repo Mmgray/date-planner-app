@@ -8,6 +8,7 @@ import Carousel from "./components/Carousel";
 import Wrapper from "./components/Wrapper";
 import Date from "./pages/Date";
 import Home from "./pages/Home";
+import MapContainer from "./utils/Google/index"
 
 class App extends Component {
   render() {
