@@ -1,5 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+//import Date from "./pages/Date";
+
 //import Navbar from "./components/Navbar";
 //import SearchForm from "./components/SearchForm";
 //import SearchResults from "./components/SearchResults";
@@ -58,5 +60,4 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
   //    }
   //  }
     
-  //  export default Date;
     
