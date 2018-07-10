@@ -10,7 +10,6 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -37,33 +36,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 50%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 50%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-  <body>
+    
     <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtHmiLP66yNey__fOpd_S_DVSUQr-OFG8&callback=initMap"
-    async defer></script>  
+<div id="right-panel">
+  <h2>Results</h2>
+  <button id="more">More results</button>
+</div>
+<!-- Replace the value of the key parameter with your own API key. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtHmiLP66yNey__fOpd_S_DVSUQr-OFG8" async defer></script>
   </body>
 </html>
-   
+   <script>
+     
