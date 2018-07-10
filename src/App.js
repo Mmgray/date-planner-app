@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 //  import Carousel from "./components/Carousel";
 //import Wrapper from "./components/Wrapper";
 import Home from "./pages/Home";
+import MapContainer from "./utils/Google/index"
 import datepg from "./pages/datepg";
 
 
