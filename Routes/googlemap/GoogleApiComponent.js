@@ -1,8 +1,7 @@
 import React, { PropTypes as T } from 'react'
 import ReactDOM from 'react-dom'
-
 import cache from 'utils/cache'
-import GoogleApi from 'Routes/googlemap/GoogleApi'
+import GoogleApi from '../googlemap/GoogleApi.js'
 
 const defaultMapConfig = {}
 export const wrapper = (options) => (WrappedComponent) => {

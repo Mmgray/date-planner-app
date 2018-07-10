@@ -36,10 +36,25 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+         element that contains the map. */
+
+       #map {
+        height: 80%;
+      }
+
+      /* Optional: Makes the sample page fill the window. */ 
+      html, body {
+        height: 60%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
     <div id="map"></div>
-<div id="right-panel">
   <h2>Results</h2>
+  <ul id="places"></ul>
   <button id="more">More results</button>
 </div>
 <!-- Replace the value of the key parameter with your own API key. -->
