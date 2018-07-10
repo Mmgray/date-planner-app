@@ -3,7 +3,7 @@ import { BrowserRouter,Route, Link,Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 //import SearchResults from "./components/SearchResults";
 ////import Footer from "./components/Footer";
-import Carousel from "./components/Carousel";
+//  import Carousel from "./components/Carousel";
 //import Wrapper from "./components/Wrapper";
 import Home from "./pages/Home";
 import datepg from "./pages/datepg";
@@ -23,7 +23,7 @@ class App extends Component {
           <div className ="content">
          
           </div>
-          <Carousel />
+           {/* <Carousel />  */}
         </div>
       </BrowserRouter>
     )
