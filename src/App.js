@@ -2,12 +2,14 @@ import React, {Component} from "react";
 import { BrowserRouter,Route, Link,Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 //import SearchResults from "./components/SearchResults";
-////import Footer from "./components/Footer";
-//  import Carousel from "./components/Carousel";
+import Footer from "./components/Footer";
+import CarouselSlider from "./components/CarouselSlider";
 //import Wrapper from "./components/Wrapper";
 import Home from "./pages/Home";
 import MapContainer from "./utils/Google/index"
 import datepg from "./pages/datepg";
+
+
 
 
 

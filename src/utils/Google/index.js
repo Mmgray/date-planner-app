@@ -39,3 +39,4 @@ export default GoogleApiWrapper(
     language: props.language
   }
 ))(MapContainer)
+
