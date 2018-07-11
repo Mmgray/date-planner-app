@@ -1,0 +1,12 @@
+body {
+    background-image: url(https://grancaffelaquila.com/wp-content/uploads/2015/11/ALEX-9-2-Group-Dining-_mini.png),
+    url(https://cdn.shopify.com/s/files/1/0759/5747/files/DSC_5024w.jpg?v=1517529850);
+    background-repeat: no-repeat, repeat;
+}
+.jumbotron {
+    opacity: .75;
+}
+#searchy {
+    width: 75%;
+    height: 50px;
+}
