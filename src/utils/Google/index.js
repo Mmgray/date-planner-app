@@ -1,29 +1,66 @@
-import React from "react"
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import React from 'react';
+import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
 
-const style = {
-  width: '100%',
-  height: '100%'
-}
+class MapContainer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state ={
+      showingInfoWindow: false,
+      activeMarker: {},
+      selectedPlace: {}
+    }
+    //binding this to event-handler functions
+    this.onMarkerClick = this.onMarkerClick.bind(this);
+    this.onMapClick = this.onMapClick.bind(this);
+  }
 
-export class MapContainer extends React.Component {
+  onMarkerClick = (props, marker, e) => {
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+  }
+
+  onMapClick = (props) => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      });
+    }
+  }
   render() {
+    const style = {
+      width: '50vw',
+      height: '75vh',
+      'marginLeft': 'auto',
+      'marginRight' : 'auto'
+    }
     return (
       <Map 
+      item
+      xs = {12}
       google={this.props.google} 
       zoom={14}
       style={style}
-      initialCenter={{
-        lat: 40.854885,
-        lng: -88.081807
+      initialCenter= {{
+        lat: 32.7767,
+        lng: -96.7970
       }}
-      onClick={this.onMapClicked}
+      onClick={this.onMapClick}
       >
 
-        <Marker onClick={this.onMarkerClick}
-                name={'Current location'} />
+        <Marker 
+          onClick={this.onMarkerClick}
+          name={'Current location'} 
+        />
 
-        <InfoWindow onClose={this.onInfoWindowClose}>
+        <InfoWindow 
+          onClose= {this.onInfoWindowClose}
+          marker = { this.state.activeMarker}
+          visible ={this.state.showingInfoWindow}
+        >
             <div>
               <h1>{this.state.selectedPlace.name}</h1>
             </div>
@@ -32,10 +69,6 @@ export class MapContainer extends React.Component {
     );
   }
 }
-
-export default GoogleApiWrapper(
-  (props) => ({
-    apiKey: props.apiKey,
-    language: props.language
-  }
-))(MapContainer)
+export default GoogleApiWrapper({
+    api: (process.env.AIzaSyBwqjHpE8HjM6Kp_xZDNIQCVaHkPDjMP6s)
+})(MapContainer)
