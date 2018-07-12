@@ -11,8 +11,13 @@ import MapContainer from "./utils/Google/index"
 import datepg from "./pages/datepg";
 // import signup from "./pages/signup";
 import Navbar from "./components/Navbar/Navbar";
+<<<<<<< HEAD
+import Jumbotron from "./components/Jumbotron/jumbotron";
+// import Button from "./components/Button/button";
+=======
 // import Jumbotron from "./components/Jumbotron/jumbotron";
 
+>>>>>>> 0f46ab6192ee106156af811cfe2133317835b95f
 
 
 class App extends Component {
@@ -35,7 +40,7 @@ class App extends Component {
 
           </div >
           <Jumbotron />
-           {/* <Carousel />  */}
+          <CarouselSlider /> 
         </div>
       </BrowserRouter>
     )
