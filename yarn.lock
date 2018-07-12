@@ -3010,6 +3010,10 @@ google-map-react@^1.0.5:
     eventemitter3 "^1.1.0"
     scriptjs "^2.5.7"
 
+google-maps-react@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/google-maps-react/-/google-maps-react-2.0.2.tgz#e03fbba032fe570fb38744bf9cd10b946c591cae"
+
 got@^6.7.1:
   version "6.7.1"
   resolved "https://registry.yarnpkg.com/got/-/got-6.7.1.tgz#240cd05785a9a18e561dc1b44b41c763ef1e8db0"
@@ -3998,6 +4002,10 @@ jest@20.0.4:
   resolved "https://registry.yarnpkg.com/jest/-/jest-20.0.4.tgz#3dd260c2989d6dad678b1e9cc4d91944f6d602ac"
   dependencies:
     jest-cli "^20.0.4"
+
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
 js-base64@^2.1.9:
   version "2.4.5"
@@ -5581,6 +5589,10 @@ react-bootstrap@^0.32.1:
     react-transition-group "^2.0.0"
     uncontrollable "^4.1.0"
     warning "^3.0.0"
+
+react-carousel-slider@^2.0.13:
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/react-carousel-slider/-/react-carousel-slider-2.0.13.tgz#b6c8fd4fddfaa15a573a5cc56dda624858110e89"
 
 react-dev-utils@^5.0.1:
   version "5.0.1"
