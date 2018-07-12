@@ -28,6 +28,11 @@ class App extends Component {
           <div className ="content">
          
           </div>
+
+          <div className="map">
+            <MapContainer />
+
+          </div >
           <Jumbotron />
            {/* <Carousel />  */}
         </div>
