@@ -4003,6 +4003,10 @@ jest@20.0.4:
   dependencies:
     jest-cli "^20.0.4"
 
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+
 js-base64@^2.1.9:
   version "2.4.5"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.5.tgz#e293cd3c7c82f070d700fc7a1ca0a2e69f101f92"
@@ -5585,6 +5589,10 @@ react-bootstrap@^0.32.1:
     react-transition-group "^2.0.0"
     uncontrollable "^4.1.0"
     warning "^3.0.0"
+
+react-carousel-slider@^2.0.13:
+  version "2.0.13"
+  resolved "https://registry.yarnpkg.com/react-carousel-slider/-/react-carousel-slider-2.0.13.tgz#b6c8fd4fddfaa15a573a5cc56dda624858110e89"
 
 react-dev-utils@^5.0.1:
   version "5.0.1"

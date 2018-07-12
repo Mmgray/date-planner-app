@@ -12,6 +12,7 @@ import datepg from "./pages/datepg";
 // import signup from "./pages/signup";
 import Navbar from "./components/Navbar/Navbar";
 import Jumbotron from "./components/Jumbotron/jumbotron";
+// import Button from "./components/Button/button";
 
 
 class App extends Component {
@@ -34,7 +35,7 @@ class App extends Component {
 
           </div >
           <Jumbotron />
-           {/* <Carousel />  */}
+          <CarouselSlider /> 
         </div>
       </BrowserRouter>
     )

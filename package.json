@@ -3,15 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "axios": "^0.18.0",
-=======
-    "jquery": "^3.3.1",
->>>>>>> 799ca532a0ea204f4a33253a6cb7e2b81d59a677
-    "google-map-react": "^1.0.5",
     "google-maps-react": "^2.0.2",
+    "jquery": "^3.3.1",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
+    "react-carousel-slider": "^2.0.13",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^1.1.4"
