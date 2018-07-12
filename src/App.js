@@ -29,8 +29,13 @@ class App extends Component {
           <div className ="content">
          
           </div>
-          {/* <Jumbotron /> */}
-           <CarouselSlider /> 
+
+          <div className="map">
+            <MapContainer />
+
+          </div >
+          <Jumbotron />
+           {/* <Carousel />  */}
         </div>
       </BrowserRouter>
     )
