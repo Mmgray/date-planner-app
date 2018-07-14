@@ -1,22 +1,23 @@
 {
-  "name": "date-planner",
-  "version": "0.1.0",
-  "private": true,
+  "name": "date-planner-app",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
   "dependencies": {
-    "axios": "^0.18.0",
-    "google-maps-react": "^2.0.2",
-    "jquery": "^3.3.1",
-    "react": "^16.4.1",
-    "react-bootstrap": "^0.32.1",
-    "react-carousel-slider": "^2.0.13",
-    "react-dom": "^16.4.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^1.1.4"
+    "react-carousel-slider": "^2.0.13"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mmgray/date-planner-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mmgray/date-planner-app/issues"
+  },
+  "homepage": "https://github.com/Mmgray/date-planner-app#readme"
 }
