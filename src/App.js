@@ -10,40 +10,17 @@ import Home from "./pages/Home";
 import MapContainer from "./utils/Google/index"
 import datepg from "./pages/datepg";
 // import signup from "./pages/signup";
-import Navbar from "./components/Navbar/Navbar";
-import Jumbotron from "./components/Jumbotron/jumbotron";
+//import Navbar from "./components/Navbar/Navbar";
+//import Jumbotron from "./components/Jumbotron/jumbotron";
 // import Button from "./components/Button/button";
-
-
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <div>        
-          <Navbar />
-          <Switch>
-            <BrowserRouter exact path="/" component={Home} />
-            <BrowserRouter exact path="/datepg" component={datepg} />
-            {/* <BrowserRouter exact path="/signup" component={signup} /> */}
-          </Switch>
-          <div className ="content">
-         
-          </div>
-
-          <div className="map">
-            <MapContainer />
-
-          </div >
-          <Jumbotron />
-          <CarouselSlider /> 
-        </div>
-      </BrowserRouter>
-    )
-  }
-}
-
+const App = () => {
+  return (
+    <div id="app">
+      <Navbar />
+      <Jumbotron />
+      <MapContainer />
+    </div>
+  );
+};
 
 export default App;
-
-
-
